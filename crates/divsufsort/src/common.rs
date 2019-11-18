@@ -125,7 +125,7 @@ impl<'a> Index<SAPtr> for SuffixArrayImm<'a> {
 // Suffix array pointers
 //-------------------------------------------
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Default)]
 pub struct SAPtr(pub Idx);
 
 use std::fmt;
